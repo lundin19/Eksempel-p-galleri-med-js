@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Gallery</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div align="center">
+        <h3>Simple Gallery</h3>
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+        <div class="column">
+          <img src="images/landscape-1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="images/landscape-2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="images/landscape-3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="images/landscape-4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+        <div class="column">
+                <img src="images/landscape-5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+              </div>
+      </div>
+    </div>
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+                <div class="mySlides">
+                        <div class="numbertext">Skriv noget tekst her</div>
+                        <img src="images/landscape-1.jpg" style="width:100%">
+                      </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="images/landscape-2.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="images/landscape-3.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="images/landscape-4.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="images/landscape-5.jpg" style="width:100%">
+          </div>
+      
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+          <!-- Thumbnail image controls -->
+          <!-- <div class="column">
+            <img class="demo" src="images/landscape-1.jpg" onclick="currentSlide(1)" alt="landscape-1">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="images/landscape-2.jpg" onclick="currentSlide(2)" alt="landscape-2">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="images/landscape-3.jpg" onclick="currentSlide(3)" alt="landscape-3">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="images/landscape-4.jpg" onclick="currentSlide(4)" alt="landscape-4">
+          </div>
+
+          <div class="column">
+                <img class="demo" src="images/landscape-5.jpg" onclick="currentSlide(4)" alt="landscape-5">
+              </div> -->
+
+        </div>
+      </div>
+
+      <script src="js/gallery.js"></script>
+
+    </body>
+    </html>
